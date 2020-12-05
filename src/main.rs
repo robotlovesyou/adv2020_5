@@ -53,8 +53,6 @@ impl Seat {
         let i = to_id(&code)?;
         match i {
             id if id <= 1023 => Ok(Seat {
-                // row: (id & ROW_MASK) >> 3,
-                // column: id & COL_MASK,
                 id,
                 code,
             }),
